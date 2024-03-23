@@ -150,6 +150,8 @@ impl Default for Vad {
     }
 }
 
+impl Send for Vad {}
+
 #[cfg(test)]
 mod test {
     use super::*;
