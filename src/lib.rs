@@ -150,7 +150,7 @@ impl Default for Vad {
     }
 }
 
-impl Send for Vad {}
+unsafe impl Send for Vad {}
 
 #[cfg(test)]
 mod test {
